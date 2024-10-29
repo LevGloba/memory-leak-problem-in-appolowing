@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), MaxRewardedAdListener {
             textViewClickToLoadAd.isVisible = false
 
             if (rewardedAd == null)
-                rewardedAd = MaxRewardedAd.getInstance("1d62dd7832dd1574", this).apply {
+                rewardedAd = MaxRewardedAd.getInstance("YOUR AD ID", this).apply {
 
                     setListener(WeakReference(this@MainActivity).get())
                 }
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity(), MaxRewardedAdListener {
 
     private fun iniApplovin() {
         val initConfig = AppLovinSdkInitializationConfiguration.builder(
-            "3B9PbJXIwBhOpKNJsw4gmg0buI0GLLOslfGNdNA7zb8OnBRk4mBr96iUTG4aFtfWmRdaNDgfLGIi_Gn9vInc8k",
+            "YOUR AD ID",
             this
         )
             .setMediationProvider(AppLovinMediationProvider.MAX)
